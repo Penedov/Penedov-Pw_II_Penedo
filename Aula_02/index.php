@@ -32,7 +32,7 @@
         echo "<hr>";
 
         // Operadores logicos || - ou && - e ! - não
-        // Operadores relacionais - 
+        // Operadores relacionais - > (maior que) , >= (maior ou igual a) , == (igual) , != (diferente) , < (menor que) e <= (menor ou igual a)
         //Tomada de decisão
 
         echo "<h2>Teste logico <strong>Idade</strong></h2>";
@@ -80,18 +80,17 @@
         $nota3 = 6;
         $nota4 = 6;
 
+        
         $soma =  $nota1 + $nota2 + $nota3 + $nota4;
         $result = $soma / 4;
 
+        echo "Sua nota final é " . $result . " e você foi " . "<br>" 
         if ($result <= 6){
             echo "Aprovado";
         }
         else{
             echo "Recusado";
         }
-
-
-
 
         ?>
 

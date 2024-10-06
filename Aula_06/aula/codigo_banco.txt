@@ -1,0 +1,26 @@
+create table tbCliente(
+	idCli int primary key auto_increment,
+	nomeCli varchar(40),
+	cpfCli varchar(40),
+	emailCli varchar(40)
+);
+
+create table tbContato(
+    idContato int PRIMARY key AUTO_INCREMENT,
+    nomeContato varchar(40),
+    emailContato varchar(40),
+    assuntoContato varchar(40),
+    mensagemContato varchar(2000)
+);
+
+create table tbCategoria(
+	idCategoria int PRIMARY key AUTO_INCREMENT,
+	categoria varchar(40)
+);
+
+insert into tbCliente values(null,'Maria','111.111.111-11','maria@gmail.com');
+insert into tbCliente values(null,'Ana','111.111.111-12','ana@gmail.com');
+
+insert into tbContato values(null,'Maria','maria@gmail.com','assunto maria','mensagem da maria');
+
+insert into tbCategoria values(null,'Tecnologia'),(null,'Brinquedos');
